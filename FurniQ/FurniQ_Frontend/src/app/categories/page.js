@@ -53,6 +53,7 @@ export default function Categories() {
     })
   }
 
+  
   const handleDeleteCategory = (id) => {
     if (window.confirm('Are you sure you want to delete this category?')) {
       setCategories(categories.filter(category => category.id !== id))
